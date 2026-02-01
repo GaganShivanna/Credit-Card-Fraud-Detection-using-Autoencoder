@@ -1,0 +1,41 @@
+credit-card-fraud-detection-autoencoder/
+│
+├── data/
+│   ├── raw/              # Original dataset (never modified)
+│   ├── processed/        # Scaled & split data
+│
+├── src/
+│   ├── data/
+│   │   ├── load_data.py
+│   │   └── preprocess.py
+│   │
+│   ├── models/
+│   │   ├── vanilla_autoencoder.py
+│   │   ├── denoising_autoencoder.py
+│   │   └── sparse_autoencoder.py
+│   │
+│   ├── training/
+│   │   ├── train.py
+│   │   └── evaluate.py
+│   │
+│   ├── visualization/
+│   │   └── plots.py
+│   │
+│   └── utils/
+│       └── metrics.py
+│
+├── experiments/
+│   └── configs.yaml
+│
+├── plots/
+│   ├── loss_curves/
+│   ├── recon_error/
+│   ├── roc_pr/
+│   └── latent_space/
+│
+├── notebooks/
+│   └── EDA.ipynb         # Optional, for exploration only
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
